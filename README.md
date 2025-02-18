@@ -1,1 +1,1 @@
-# Chatty---Fullstack-Chat-App
+# Chatty--Fullstack-Chat-App
