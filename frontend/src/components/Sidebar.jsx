@@ -27,7 +27,7 @@ const Sidebar = () => {
           <span className="font-medium hidden lg:block">Contacts</span>
         </div>
 
-        {/* TODO: Online Filter Toggle  */}
+        {/* Online Filter Toggle  */}
         <div className="mt-3 hidden lg:flex items-center gap-2">
 
           <label className="cursor-pointer flex items-center gap-2">
@@ -79,6 +79,7 @@ const Sidebar = () => {
                 {onlineUsers.includes(user._id) ? "Online" : "Offline"}
               </div>
             </div>
+            
           </button>
         ))}
 

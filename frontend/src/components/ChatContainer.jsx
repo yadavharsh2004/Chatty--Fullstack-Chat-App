@@ -9,7 +9,7 @@ import { formatMessageTime } from '../lib/utils';
 const ChatContainer = () => {
   const { messages, getMessages, isLoadingMessages, selectedUser, subscribeToMessages, unsubscribeFromMessages } = useChatStore();
   const {authUser} = useAuthStore();
-  const messageEndRef = useRef(null);
+  const messageEndRef = useRef(null); 
   
   useEffect(() => {
     getMessages(selectedUser._id);
@@ -46,6 +46,7 @@ const ChatContainer = () => {
             ref={messageEndRef}
             >
             
+            {/* image  */}
             <div className='chat-image avatar'>
               <div className='size-10 rounded-full border'>
                 <img src={message.senderId === selectedUser._id 

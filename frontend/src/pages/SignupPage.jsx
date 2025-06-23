@@ -24,6 +24,7 @@ const SignupPage = () => {
 
     return true;
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -32,13 +33,12 @@ const SignupPage = () => {
     if(success === true) signup(formData);
   };
 
-  console.log(formData.fullName);
-
   return (
-    <div className="min-h-screen grid grid-cols-2 ">
+    <div className="min-h-screen grid lg:grid-cols-2 ">
       {/* left side  */}
       <div className="flex flex-col justify-center items-center p-6 sm:p-12">
         <div className="w-full max-w-md space-y-8">
+
           {/* LOGO */}
           <div className="text-center mb-8">
             <div className="flex flex-col items-center gap-2 group">
@@ -58,6 +58,7 @@ const SignupPage = () => {
 
           {/* form  */}
           <form onSubmit={handleSubmit} className="space-y-6">
+            
             {/* Name  */}
             <div className="form-control">
               <label className="label">
@@ -149,7 +150,6 @@ const SignupPage = () => {
               )}
             </button>
 
-
           </form>
             
             {/* Sign in option  */}
@@ -168,7 +168,6 @@ const SignupPage = () => {
       </div>
 
       {/* right side  */}
-
       <AuthImagePattern
         title="Join our community"
         subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
