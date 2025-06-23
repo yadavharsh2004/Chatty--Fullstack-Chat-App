@@ -17,7 +17,10 @@ const __dirname = path.resolve()
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: [
+        "http://localhost:5173",
+        "https://chatty-fullstack-chat-app.onrender.com"
+    ],
     credentials: true  
 }))
 
