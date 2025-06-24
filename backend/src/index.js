@@ -19,7 +19,7 @@ app.use(cookieParser());
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://chatty-fullstack-chat-app.onrender.com"
+        // "https://chatty-fullstack-chat-app.onrender.com"
     ],
     credentials: true  
 }))

@@ -8,8 +8,11 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173", "https://chatty-fullstack-chat-app.onrender.com/"],
-    }
+        origin: ["http://localhost:5173", 
+            // "https://chatty-fullstack-chat-app.onrender.com"
+        ],
+    },
+    credentials: true
 })
 
 //using in the message.controller for real time message sending
